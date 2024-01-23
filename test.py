@@ -18,3 +18,6 @@ age = input("how old are you\n")
 print("hey", name, 'ie\n')
 
 level_up()
+
+fruits = "apple", "banana", "carrot"
+a, b, c = fruits
