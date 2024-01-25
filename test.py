@@ -9,15 +9,21 @@ def level_up():
 	else :
 		print("please choose a reward")
 
+fruits = "apple", "banana", "carrot"
+a, b, c = fruits
 
 print("welcome to this place\n")
 
 name = input("What is your name\n")
-age = input("how old are you\n")
+age = int(input("how old are you\n"))
 
-print("hey", name, 'ie\n')
+if age >= 18:
+	print("please continue to the next step\n")
+else:
+	print("You aren't old enough to enter\n")
 
-level_up()
+print("hey", name, 'welcome to my practice\n')
 
-fruits = "apple", "banana", "carrot"
-a, b, c = fruits
+fruits = input("what does your favorite fruit start with\n")
+if fruits == (a,b,c):
+	print(fruits)
