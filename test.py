@@ -24,6 +24,10 @@ else:
 
 print("hey", name, 'welcome to my practice\n')
 
+print("you will be " + str(age + 10 ) , 'in 10 years')
+
+print("you have", str(len(name)) , 'letters in your name')
+
 fruits = input("what does your favorite fruit start with\n")
 if fruits == (a,b,c):
 	print(fruits)
