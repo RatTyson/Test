@@ -1,14 +1,19 @@
 #this is used everytime you level up
 def level_up():
 	print("You just leveled up!\n")
-	reward = input('Would you like a sword or a shield?')
-	if reward == "shield":
-		print("you've gained a new shield")
-		if reward == "sword":
-			print("you gained a shield")
-	else :
-		print("please choose a reward")
-
+	while True:
+		reward = input('Would you like a sword or a shield? ')
+		if reward == "shield":
+			print("you've gained a new shield")
+			break
+		elif reward == "sword":
+			print("you gained a sword")
+			break
+		#need a way to repeat command if they dont choose either or
+		elif reward != "shield" or "sword":
+			print("please choose a reward ")
+	
+level_up()
 fruits = "apple", "banana", "carrot"
 a, b, c = fruits
 
