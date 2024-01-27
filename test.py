@@ -14,6 +14,7 @@ a, b, c = fruits
 
 print("welcome to this place\n")
 
+#asks for name and age
 while True:
     name = input("Enter your name: ")
     age = int(input("Enter your age: "))  # Assuming you're getting the age from user input
@@ -28,7 +29,7 @@ while True:
 else:
     print("Unexpected error occurred.")  # This will be printed if the loop exits unexpectedly
 
-
+password = input("please make a password ")
 
 print("hey", name, 'welcome to my practice\n')
 input()
@@ -40,3 +41,12 @@ input()
 fruits = input("what does your favorite fruit start with\n")
 if fruits == (a,b,c):
 	print(fruits)
+
+
+while True:
+    userInput = input("Please enter your password: ")
+    if userInput == password:
+        print("You may continue.")
+        break
+    else:
+        print("Incorrect password.")
