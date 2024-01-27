@@ -34,6 +34,7 @@ while True:
 else:
     print("Unexpected error occurred.")  # This will be printed if the loop exits unexpectedly
 
+#user creates a password
 password = input("please make a password ")
 
 print("hey", name, 'welcome to my practice\n')
@@ -43,11 +44,17 @@ print("you will be " + str(age + 10 ) , 'in 10 years')
 
 print("you have", str(len(name)) , 'letters in your name')
 input()
-fruits = input("what does your favorite fruit start with\n")
-if fruits == (a,b,c):
-	print(fruits)
 
+# Asks for favorite letter then prints out food from database
+favoriteFruit = input("What letter does your favorite fruit start with? ")
+if favoriteFruit == "a":
+      print("your favorite fruit is a",a)
+elif favoriteFruit == "b":
+      print('your favorite fruit is a',b)
+elif favoriteFruit == 'c':
+      print("your favorite fruit is a",c)
 
+#asks for previous inputed password
 while True:
     userInput = input("Please enter your password: ")
     if userInput == password:
